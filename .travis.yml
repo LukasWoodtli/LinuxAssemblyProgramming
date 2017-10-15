@@ -1,0 +1,11 @@
+language: c
+sudo: false
+os:
+  - linux
+addons:
+  apt:
+    packages:
+      - yasm
+
+script:
+  - make test
