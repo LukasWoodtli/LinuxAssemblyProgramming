@@ -4,14 +4,22 @@ ASFLAGS = -g dwarf2 -f elf64
 LD      = ld
 LDFLAGS = -g
 
-example:example.o
-	$(LD) $(LDFLAGS) -o example example.o
+SOURCES := $(wildcard *.asm)
+OBJECTS := $(patsubst %.asm, %.o, $(SOURCES))
+TARGETS := $(patsubst %.asm, %, $(SOURCES))
+RUN_TARGETS := $(patsubst %, ./%, $(TARGETS))
 
-example.o:example.asm
-	$(AS) $(ASFLAGS) example.asm -l example.lst
+$(warning $(TARGETS))
+
+$(TARGETS): $(OBJECTS)
+	$(LD) $(LDFLAGS) -o $@ $^
+
+%.o:%.asm
+	$(AS) $(ASFLAGS) $< -l $@.lst
 
 clean:
-	rm -rf *.o *.lst example
+	rm -rf *.o *.lst $(TARGETS)
 
-test:example
-	./example
+
+test:$(TARGETS)
+	$(RUN_TARGETS)
