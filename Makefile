@@ -1,14 +1,28 @@
+SUBDIRS = 04_ProgramFormat other
 
+.PHONY: subdirs $(SUBDIRS)
 
-all:
-	+$(MAKE) -C 04_ProgramFormat
-	+$(MAKE) -C other
+subdirs: $(SUBDIRS)
 
+$(SUBDIRS):
+	$(MAKE) -C $@ $(MAKECMDGOALS)
 
-test:
-	+$(MAKE) -C 04_ProgramFormat test
-	+$(MAKE) -C other test
+# test target
+TESTDIRS = $(SUBDIRS:%=test-%)
 
-clean:
-	+$(MAKE) -C 04_ProgramFormat clean
-	+$(MAKE) -C other clean
+test: $(TESTDIRS)
+$(TESTDIRS): 
+	$(MAKE) -C $(@:test-%=%) test
+
+.PHONY: subdirs $(TESTDIRS)
+.PHONY: test
+
+# clean target
+CLEANDIRS = $(SUBDIRS:%=clean-%)
+
+clean: $(CLEANDIRS)
+$(CLEANDIRS): 
+	$(MAKE) -C $(@:clean-%=%) clean
+
+.PHONY: subdirs $(CLEANDIRS)
+.PHONY: clean
