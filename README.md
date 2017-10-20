@@ -2,16 +2,19 @@
 This project contains examples from the book
 [x86-64 Assembly Language Programming with Ubuntu](http://www.egr.unlv.edu/~ed/x86.html)
 
+# Build
+[![Build Status](https://travis-ci.org/LukasWoodtli/LinuxAssemblyProgramming.svg?branch=master)](https://travis-ci.org/LukasWoodtli/LinuxAssemblyProgramming)
+
 # Contents
 
 | Chapter | Title                                 | Page | Done |
 |---------|---------------------------------------|------|------|
-|  1.     | Introduction                          |   1  |      |
-|  2.     | Architecture Overview                 |   7  |      |
-|  3.     | Data Representation                   |  21  |      |
-|  4.     | Program Format                        |  33  |      |
-|  5.     | Tool Chain                            |  41  |      |
-|  6.     | DDD Debugger                          |  55  |      |
+|  1.     | Introduction                          |   1  |   ✓  |
+|  2.     | Architecture Overview                 |   7  |   ✓  |
+|  3.     | Data Representation                   |  21  |   ✓  |
+|  4.     | Program Format                        |  33  |   ✓  |
+|  5.     | Tool Chain                            |  41  |   ✓  |
+|  6.     | DDD Debugger                          |  55  |   ✓  |
 |  7.     | Instruction Set Overview              |  71  |      |
 |  8.     | Addressing Modes                      | 129  |      |
 |  9.     | Process Stack                         | 147  |      |
