@@ -4,14 +4,27 @@ ASFLAGS = -g dwarf2 -f elf64
 LD      = ld
 LDFLAGS = -g
 
-example:example.o
-	$(LD) $(LDFLAGS) -o example example.o
+SOURCES := $(wildcard *.asm)
+OBJECTS := $(patsubst %.asm, %.o, $(SOURCES))
+TARGETS := $(patsubst %.asm, %, $(SOURCES))
 
-example.o:example.asm
-	$(AS) $(ASFLAGS) example.asm -l example.lst
+
+all: $(TARGETS)
+
+$(TARGETS): %: %.o
+	$(LD) $(LDFLAGS) -o $@ $^
+
+%.o:%.asm
+	$(AS) $(ASFLAGS) $< -l $@.lst
 
 clean:
-	rm -rf *.o *.lst example
+	rm -rf *.o *.lst $(TARGETS)
 
-test:example
-	./example
+# the empty line at the end is needed
+define run-test
+$(1)
+
+endef
+
+test:$(TARGETS)
+	$(foreach test,$(TARGETS),$(call run-test,./$(test)))
