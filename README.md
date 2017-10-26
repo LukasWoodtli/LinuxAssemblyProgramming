@@ -15,8 +15,8 @@ This project contains examples from the book
 |  4.     | Program Format                        |  33  |   ✓  |
 |  5.     | Tool Chain                            |  41  |   ✓  |
 |  6.     | DDD Debugger                          |  55  |   ✓  |
-|  7.     | Instruction Set Overview              |  71  |      |
-|  8.     | Addressing Modes                      | 129  |      |
+|  7.     | Instruction Set Overview              |  71  |   ✓  |
+|  8.     | Addressing Modes                      | 129  |   ✓  |
 |  9.     | Process Stack                         | 147  |      |
 | 10.     | Program Development                   | 157  |      |
 | 11.     | Macros                                | 167  |      |
