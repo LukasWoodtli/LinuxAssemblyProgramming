@@ -1,4 +1,6 @@
-SUBDIRS = 04_ProgramFormat other
+SUBDIRS = 04_ProgramFormat 07_InstructionSetOverview 08_AddressingModes other
+
+
 
 .PHONY: subdirs $(SUBDIRS)
 
