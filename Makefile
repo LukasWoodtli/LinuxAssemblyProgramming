@@ -1,4 +1,4 @@
-SUBDIRS = 04_ProgramFormat 07_InstructionSetOverview 08_AddressingModes other
+SUBDIRS = 04_ProgramFormat 07_InstructionSetOverview 08_AddressingModes 09_Stack other
 
 
 
