@@ -1,6 +1,5 @@
-SUBDIRS = 04_ProgramFormat 07_InstructionSetOverview 08_AddressingModes 09_Stack other
 
-
+SUBDIRS := $(filter-out ./book/, $(sort $(dir $(wildcard ./*/.))))
 
 .PHONY: subdirs $(SUBDIRS)
 
