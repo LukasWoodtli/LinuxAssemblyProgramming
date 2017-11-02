@@ -17,9 +17,9 @@ This project contains examples from the book
 |  6.     | DDD Debugger                          |  55  |   ✓  |
 |  7.     | Instruction Set Overview              |  71  |   ✓  |
 |  8.     | Addressing Modes                      | 129  |   ✓  |
-|  9.     | Process Stack                         | 147  |      |
-| 10.     | Program Development                   | 157  |      |
-| 11.     | Macros                                | 167  |      |
+|  9.     | Process Stack                         | 147  |   ✓  |
+| 10.     | Program Development                   | 157  |   ✓  |
+| 11.     | Macros                                | 167  |   ✓  |
 | 12.     | Functions                             | 173  |      |
 | 13.     | System Services                       | 197  |      |
 | 14.     | Multiple Source Files                 | 227  |      |
