@@ -31,4 +31,4 @@ $(1)
 endef
 
 test:$(TARGETS)
-	$(foreach test,$(TARGETS),$(call run-test,./$(BUILDDIR)/$(test)))
+	$(foreach test,$(filter-out $(TESTS_BLACKLIST),$(TARGETS)),$(call run-test,./$(BUILDDIR)/$(test)))

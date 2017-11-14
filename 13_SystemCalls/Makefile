@@ -1,2 +1,3 @@
-include ../MultipleTargets.mk
+TESTS_BLACKLIST += console_input
 
+include ../MultipleTargets.mk

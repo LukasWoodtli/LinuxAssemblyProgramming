@@ -1,5 +1,5 @@
-
-SUBDIRS := $(filter-out ./book/, $(sort $(dir $(wildcard ./*/.))))
+DIRS_BLACKLIST := ./book/
+SUBDIRS := $(filter-out $(DIRS_BLACKLIST), $(sort $(dir $(wildcard ./*/.))))
 
 .PHONY: subdirs $(SUBDIRS)
 
