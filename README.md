@@ -21,8 +21,8 @@ This project contains examples from the book
 | 10.     | Program Development                   | 157  |   ✓  |
 | 11.     | Macros                                | 167  |   ✓  |
 | 12.     | Functions                             | 173  |   ✓  |
-| 13.     | System Services                       | 197  |      |
-| 14.     | Multiple Source Files                 | 227  |      |
+| 13.     | System Services                       | 197  |   ✓  |
+| 14.     | Multiple Source Files                 | 227  |   ✓  |
 | 15.     | Stack Buffer Overflow                 | 237  |      |
 | 16.     | Command Line Arguments                | 247  |      |
 | 17.     | Input/Output Buffering                | 257  |      |
