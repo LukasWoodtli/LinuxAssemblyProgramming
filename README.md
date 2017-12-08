@@ -26,7 +26,7 @@ This project contains examples from the book
 | 15.     | Stack Buffer Overflow                 | 237  |   ✓  |
 | 16.     | Command Line Arguments                | 247  |   ✓  |
 | 17.     | Input/Output Buffering                | 257  |   ✓  |
-| 18.     | Floating Point Instructions           | 265  |      |
+| 18.     | Floating Point Instructions           | 265  |   ✓  |
 | 19.     | Parallel Processing                   | 289  |   ✓  |
 | 20.     | Interrupts                            | 297  |   ✓  |
 | 21.     | Appendix A - ASCII Table              | 307  |   ✓  |
