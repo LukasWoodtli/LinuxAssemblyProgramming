@@ -23,14 +23,14 @@ This project contains examples from the book
 | 12.     | Functions                             | 173  |   ✓  |
 | 13.     | System Services                       | 197  |   ✓  |
 | 14.     | Multiple Source Files                 | 227  |   ✓  |
-| 15.     | Stack Buffer Overflow                 | 237  |      |
-| 16.     | Command Line Arguments                | 247  |      |
-| 17.     | Input/Output Buffering                | 257  |      |
+| 15.     | Stack Buffer Overflow                 | 237  |   ✓  |
+| 16.     | Command Line Arguments                | 247  |   ✓  |
+| 17.     | Input/Output Buffering                | 257  |   ✓  |
 | 18.     | Floating Point Instructions           | 265  |      |
-| 19.     | Parallel Processing                   | 289  |      |
-| 20.     | Interrupts                            | 297  |      |
-| 21.     | Appendix A - ASCII Table              | 307  |      |
-| 22.     | Appendix B - Instruction Set Summary  | 309  |      |
-| 23.     | Appendix C - System Services          | 325  |      |
-| 24.     | Appendix D - Quiz Question Answers    | 331  |      |
-| 25.     | Alphabetical Index                    | 349  |      |
+| 19.     | Parallel Processing                   | 289  |   ✓  |
+| 20.     | Interrupts                            | 297  |   ✓  |
+| 21.     | Appendix A - ASCII Table              | 307  |   ✓  |
+| 22.     | Appendix B - Instruction Set Summary  | 309  |   ✓  |
+| 23.     | Appendix C - System Services          | 325  |   ✓  |
+| 24.     | Appendix D - Quiz Question Answers    | 331  |  (✓) |
+| 25.     | Alphabetical Index                    | 349  |  (✓) |
